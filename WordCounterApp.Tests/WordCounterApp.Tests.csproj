@@ -10,6 +10,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WordCounter\WordCounterApp.csproj" />
+    <ProjectReference Include="..\WordCounterApp\WordCounterApp.csproj" />
   </ItemGroup>
 </Project>
