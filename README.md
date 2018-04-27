@@ -12,7 +12,7 @@ _An app that returns the frequency of a specific word in a longer string. The us
 * _The program should accept two inputs from the user, a word and a longer string._
   * _Ex: input: "the" and "The quick brown fox jumped over the lazy dog." ; output: The word "the" occurs 2 times in the given string._
 * _The program should disregard symbols, numbers, and null inputs._
-  * _Ex: input: "You" and "Are you?" ; output: The "you"'s should match, despite one having a "?" appended to it._
+  * _Ex: input: "You" and "Are you?" ; output: The "you"'s should match, despite one having a "?" appended to it. This is handled in the back-end logic, where the string parser ignores special characters._
   * _Ex: input: "3nj0y" and "Did you enjoy the show?" ; output: Should return an error message._
 * _The program should treat upper and lower case letters the same, so that "The" and "the" both return a value of 1._
   * _Ex: input: "YOU" and "you only ever order the fish!" ; output: The word "YOU" occurs 1 time in the given string._
@@ -33,7 +33,7 @@ _An app that returns the frequency of a specific word in a longer string. The us
 
 ## Known Bugs
 
-_The app is currently in development._
+_Throwing a "stackoverflow" exception when executing "dotnet run" in the console._
 
 ## Support and contact details
 

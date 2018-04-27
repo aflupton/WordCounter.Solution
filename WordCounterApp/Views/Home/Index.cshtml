@@ -24,7 +24,7 @@
           {
             @foreach(string word in Model)
             {
-              <h4>The word, @Model.GetWord(), occurs @Model.GetOccurrenceValue() times in the specified string.</h4>
+              <h4>The word, @Model.GetWord(), occurs @Model.GetOccurrenceValue() times in the string "@Model.GetString()".</h4>
             }
           } else {
             <h3>Please enter values into the spaces provided.</h3>
