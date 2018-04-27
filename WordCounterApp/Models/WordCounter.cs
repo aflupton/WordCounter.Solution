@@ -9,9 +9,9 @@ namespace WordCounterApp.Models
   {
     private string _userString;
     private string _userWord;
-    private int _occurrence;
+    private int _occurrence = 0;
 
-    public WordCounterApp(string userString, string userWord)
+    public RepeatCounter(string userString, string userWord)
     {
       _userString = userString.ToLower();
       _userWord = userWord.ToLower();
@@ -37,6 +37,13 @@ namespace WordCounterApp.Models
         }
       }
       return _occurrence;
+    }
+
+    public void ClearAll()
+    {
+      _userString = "";
+      _userWord = "";
+      _occurrence = 0;
     }
 
   }

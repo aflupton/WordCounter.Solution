@@ -6,3 +6,7 @@
 /Users/Guest/Desktop/WordCounterApp.Solution/WordCounterApp/bin/Debug/netcoreapp1.1/WordCounterApp.runtimeconfig.json
 /Users/Guest/Desktop/WordCounterApp.Solution/WordCounterApp/bin/Debug/netcoreapp1.1/WordCounterApp.runtimeconfig.dev.json
 /Users/Guest/Desktop/WordCounterApp.Solution/WordCounterApp/obj/Debug/netcoreapp1.1/WordCounterApp.AssemblyInfo.cs
+/Users/Guest/Desktop/WordCounterApp.Solution/WordCounterApp/bin/Debug/netcoreapp1.1/WordCounterApp.dll
+/Users/Guest/Desktop/WordCounterApp.Solution/WordCounterApp/bin/Debug/netcoreapp1.1/WordCounterApp.pdb
+/Users/Guest/Desktop/WordCounterApp.Solution/WordCounterApp/obj/Debug/netcoreapp1.1/WordCounterApp.dll
+/Users/Guest/Desktop/WordCounterApp.Solution/WordCounterApp/obj/Debug/netcoreapp1.1/WordCounterApp.pdb
