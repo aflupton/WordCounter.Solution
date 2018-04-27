@@ -20,9 +20,8 @@ namespace WordCounterApp.Controllers
       string word = Request.Form["word"];
       string sentence = Request.Form["sentence"];
       RepeatCounter newWord = new RepeatCounter(sentence, word);
-      Console.WriteLine(newWord);
-
-      return View("Index", newWord);
+      Console.WriteLine(newWord); //to check result
+      return View("Index", newWord); //return result to index view
     }
   }
 }

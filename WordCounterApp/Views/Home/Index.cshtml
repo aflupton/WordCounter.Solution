@@ -18,18 +18,20 @@
       </form>
     </div>
     <!-- Results div -->
-    <div class="col-md-6 results">
-      @if(Model != null)
-        {
-          @foreach(string word in Model)
+    <div class="jumbotron jumbotron-info">
+      <div class="col-md-6 results">
+        @if(Model != null)
           {
-            <h4>The word, @Model.GetWord(), occurs @Model.GetOccurrenceValue() times in the specified string.</h4>
+            @foreach(string word in Model)
+            {
+              <h4>The word, @Model.GetWord(), occurs @Model.GetOccurrenceValue() times in the specified string.</h4>
+            }
+          } else {
+            <h3>Please enter values into the spaces provided.</h3>
           }
-        } else {
-          <h3>Please enter values into the spaces provided.</h3>
-        }
 
 
+      </div>
     </div>
     <!-- Home button div -->
     <div class="row">

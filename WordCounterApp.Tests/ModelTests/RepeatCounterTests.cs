@@ -6,7 +6,7 @@ using System.Collections.Generic;
 namespace WordCounterApp.TestTools
 {
   [TestClass]
-  public class RepeatCounterTest : IDisposable
+  public class RepeatCounterTest
   {
     [TestMethod]
     public void CheckWord_RecogWordInput_True()
@@ -27,6 +27,15 @@ namespace WordCounterApp.TestTools
     }
 
     [TestMethod]
+    public void CheckInstances_OnlyWholeWord_True()
+    {
+      //Arrange
+      RepeatCounter newWord = new RepeatCounter("We must forget if we want to go on living.", "W");
+      //Assert
+      Assert.AreEqual(0, newWord.GetOccurrenceValue());
+    }
+
+    [TestMethod]
     public void CountInstances_OneMatch_True()
     {
       //Arrange
@@ -44,10 +53,10 @@ namespace WordCounterApp.TestTools
       Assert.AreEqual(2, newWord.GetOccurrenceValue());
     }
 
-    public void Dispose()
-    {
-      //Act
-      RepeatCounter.ClearAll();
-    }
+    // public void Dispose()
+    // {
+    //   //Act
+    //   RepeatCounter.ClearAll();
+    // }
   }
 }
