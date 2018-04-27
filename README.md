@@ -33,7 +33,7 @@ _An app that returns the frequency of a specific word in a longer string. The us
 
 ## Known Bugs
 
-_Throwing a "stackoverflow" exception when executing "dotnet run" in the console._
+_Throwing a "stackoverflow" exception when executing "dotnet run" in the console. Working on a solution._
 
 ## Support and contact details
 
