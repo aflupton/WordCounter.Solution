@@ -1,4 +1,4 @@
-# WordCounterApp_
+# _WordCounterApp_
 
 #### _Word Counter App, 4/27/18_
 

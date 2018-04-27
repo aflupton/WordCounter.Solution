@@ -9,7 +9,8 @@ namespace WordCounterApp.Models
   {
     private string _userString;
     private string _userWord;
-    private int _occurrence = 0;
+    private int _occurrences = 0;
+    private bool _isValid = false;
 
     public RepeatCounter(string userString, string userWord)
     {
@@ -22,28 +23,56 @@ namespace WordCounterApp.Models
       return _userString;
     }
 
+    public void SetString(string newString)
+    {
+      _userString = newString;
+    }
+
     public string GetWord()
     {
       return _userWord;
     }
 
+    public void SetWord(string newWord)
+    {
+      _userWord = newWord;
+    }
+
+    public int GetOccurrences()
+    {
+      return _occurrences;
+    }
+
+    public bool IsValid()
+    {
+      foreach (string word in _userString.Split(' '))
+      {
+        if(word != null)
+        {
+          return _isValid = true;
+        }
+        else {}
+      }
+    }
+
     public int GetOccurrenceValue()
     {
-      foreach (string word in _userString.Split())
+      foreach (string word in _userString.Split(' '))
       {
-        if(word == _userWord)
+        char[] delimiterChars = { ' ', ',', '.', ':', '?', '!' };
+        if(word == _userWord))
         {
-          _occurrence++;
-        }
+          _occurrences++;
+        } else {}
       }
-      return _occurrence;
+      Console.WriteLine(_occurrences);
+      return _occurrences;
     }
 
     public void ClearAll()
     {
-      _userString = "";
-      _userWord = "";
-      _occurrence = 0;
+      _userWord.Clear();
+      _userString.Clear();
     }
 
   }

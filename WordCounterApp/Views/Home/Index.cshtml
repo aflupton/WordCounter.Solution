@@ -1,0 +1,44 @@
+@{
+  Layout = "_Layout";
+}
+
+<div class="container">
+  <div class="instructions">
+    <p>Enter a sentence and a single word and the program will return the number of instances that the word occurs within the sentence. Only standard alphabetic characters will be considered as valid.</p>
+  </div>
+  <div class="row">
+    <!-- Input div -->
+    <div class="col-md-6">
+      <form class="form-control" action="/" method="post">
+        <label for="word">Enter a word:</label>
+        <input type="text" name="word" placeholder=">>">
+        <label for="sentence">Enter a sentence:</label>
+        <input type="text" name="sentence" placeholder=">>">
+        <button type="submit" name="button">Submit</button>
+      </form>
+    </div>
+    <!-- Results div -->
+    <div class="col-md-6 results">
+      @if(Model != null)
+        {
+          @foreach(string word in Model)
+          {
+            <h4>The word, @Model.GetWord(), occurs @Model.GetOccurrenceValue() times in the specified string.</h4>
+          }
+        } else {
+          <h3>Please enter values into the spaces provided.</h3>
+        }
+
+
+    </div>
+    <!-- Home button div -->
+    <div class="row">
+      <div class="col-12">
+        <form class="form-group" action="/" method="get">
+          <button id="goToHome" type="submit" name="button">Return to home</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</div>
