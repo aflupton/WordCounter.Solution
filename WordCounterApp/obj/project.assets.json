@@ -9555,16 +9555,16 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Guest/Desktop/WordCounter.Solution/WordCounter/WordCounterApp.csproj",
+      "projectUniqueName": "/Users/Guest/Desktop/WordCounterApp.Solution/WordCounterApp/WordCounterApp.csproj",
       "projectName": "WordCounterApp",
-      "projectPath": "/Users/Guest/Desktop/WordCounter.Solution/WordCounter/WordCounterApp.csproj",
-      "outputPath": "/Users/Guest/Desktop/WordCounter.Solution/WordCounter/obj/",
+      "projectPath": "/Users/Guest/Desktop/WordCounterApp.Solution/WordCounterApp/WordCounterApp.csproj",
+      "outputPath": "/Users/Guest/Desktop/WordCounterApp.Solution/WordCounterApp/obj/",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
       "files": {
-        "lib/netcoreapp1.1/WordCounterApp.dll": "/Users/Guest/Desktop/WordCounter.Solution/WordCounter/bin/placeholder/netcoreapp1.1/WordCounterApp.dll"
+        "lib/netcoreapp1.1/WordCounterApp.dll": "/Users/Guest/Desktop/WordCounterApp.Solution/WordCounterApp/bin/placeholder/netcoreapp1.1/WordCounterApp.dll"
       },
       "frameworks": {
         "netcoreapp1.1": {

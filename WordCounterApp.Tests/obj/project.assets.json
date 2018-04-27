@@ -10632,8 +10632,8 @@
     },
     "WordCounterApp/1.0.0": {
       "type": "project",
-      "path": "../WordCounter/WordCounterApp.csproj",
-      "msbuildProject": "../WordCounter/WordCounterApp.csproj"
+      "path": "../WordCounterApp/WordCounterApp.csproj",
+      "msbuildProject": "../WordCounterApp/WordCounterApp.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -10651,22 +10651,22 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Guest/Desktop/WordCounter.Solution/WordCounter.Tests/WordCounterApp.Tests.csproj",
+      "projectUniqueName": "/Users/Guest/Desktop/WordCounterApp.Solution/WordCounterApp.Tests/WordCounterApp.Tests.csproj",
       "projectName": "WordCounterApp.Tests",
-      "projectPath": "/Users/Guest/Desktop/WordCounter.Solution/WordCounter.Tests/WordCounterApp.Tests.csproj",
-      "outputPath": "/Users/Guest/Desktop/WordCounter.Solution/WordCounter.Tests/obj/",
+      "projectPath": "/Users/Guest/Desktop/WordCounterApp.Solution/WordCounterApp.Tests/WordCounterApp.Tests.csproj",
+      "outputPath": "/Users/Guest/Desktop/WordCounterApp.Solution/WordCounterApp.Tests/obj/",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
       "files": {
-        "lib/netcoreapp1.1/WordCounterApp.Tests.dll": "/Users/Guest/Desktop/WordCounter.Solution/WordCounter.Tests/bin/placeholder/netcoreapp1.1/WordCounterApp.Tests.dll"
+        "lib/netcoreapp1.1/WordCounterApp.Tests.dll": "/Users/Guest/Desktop/WordCounterApp.Solution/WordCounterApp.Tests/bin/placeholder/netcoreapp1.1/WordCounterApp.Tests.dll"
       },
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
-            "/Users/Guest/Desktop/WordCounter.Solution/WordCounter/WordCounterApp.csproj": {
-              "projectPath": "/Users/Guest/Desktop/WordCounter.Solution/WordCounter/WordCounterApp.csproj"
+            "/Users/Guest/Desktop/WordCounterApp.Solution/WordCounterApp/WordCounterApp.csproj": {
+              "projectPath": "/Users/Guest/Desktop/WordCounterApp.Solution/WordCounterApp/WordCounterApp.csproj"
             }
           }
         }
