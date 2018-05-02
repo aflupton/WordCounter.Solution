@@ -3,44 +3,54 @@
 }
 
 <div class="container">
-  <div class="instructions">
-    <p>Enter a sentence and a single word and the program will return the number of instances that the word occurs within the sentence. Only standard alphabetic characters will be considered as valid.</p>
-  </div>
-  <div class="row">
-    <!-- Input div -->
+  <div class="row" id="instructions">
     <div class="col-md-6">
-      <form class="form-control" action="/" method="post">
+      <p>Enter a search word and a string of text, and the program will return the number of instances that the word occurs within the string.</p>
+      <p>Only standard alphabetic characters are valid.</p>
+    </div>
+  </div>
+  <!-- End of instructions -->
+
+  <!-- Main content div -->
+  <div class="row">
+    <!-- Form div -->
+    <div class="col-md-3">
+      <form class="form-group" action="/" method="post">
         <label for="word">Enter a word:</label>
-        <input type="text" name="word" placeholder=">>">
+        <input class="form-control" type="text" name="word" placeholder=">>">
+        <br>
         <label for="sentence">Enter a sentence:</label>
-        <input type="text" name="sentence" placeholder=">>">
+        <input class="form-control" type="text" name="sentence" placeholder=">>">
+        <br>
         <button type="submit" name="button">Submit</button>
       </form>
     </div>
+    <!-- End of form -->
+
     <!-- Results div -->
-    <div class="jumbotron jumbotron-info">
-      <div class="col-md-6 results">
-        @if(Model != null)
-          {
-            @foreach(string word in Model)
-            {
-              <h4>The word, @Model.GetWord(), occurs @Model.GetOccurrenceValue() times in the string "@Model.GetString()".</h4>
-            }
-          } else {
-            <h3>Please enter values into the spaces provided.</h3>
-          }
-
-
-      </div>
+    <div class="col-md-3" id="results">
+      @if(Model != null)
+        {
+          <p>The word <strong>"@Model.GetWord()"</strong> occurs <strong>@Model.GetOccurrenceValue()</strong> times in the string:</p>
+          <p><strong>"@Model.GetString()"</strong></p>
+        } else {
+          <h3>Please enter values into the spaces provided.</h3>
+        }
     </div>
-    <!-- Home button div -->
-    <div class="row">
-      <div class="col-12">
-        <form class="form-group" action="/" method="get">
-          <button id="goToHome" type="submit" name="button">Return to home</button>
-        </form>
-      </div>
+    <!-- End of results -->
+
+  </div>
+  <!-- End of main div -->
+
+  <!-- Home button -->
+  <div class="row">
+    <div class="col-md-3">
+      <form class="form-group" action="/" method="get">
+        <button id="goToHome" type="submit" name="button">Reset form</button>
+      </form>
     </div>
   </div>
+  <!-- End of button div -->
 
 </div>
+<!-- End of container -->

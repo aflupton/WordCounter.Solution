@@ -11,16 +11,16 @@ namespace WordCounterApp.Controllers
     [HttpGet("/")]
     public ActionResult Index()
     {
-      return View();
+      return View(); //return empty form
     }
 
-    [HttpPost("/Submit")]
+    [HttpPost("/")]
     public ActionResult Submit()
     {
-      string word = Request.Form["word"];
-      string sentence = Request.Form["sentence"];
-      RepeatCounter newWord = new RepeatCounter(sentence, word);
-      Console.WriteLine(newWord); //to check result
+      string sentence = Request.Form["sentence"]; //collect string
+      string word = Request.Form["word"]; //collect search word
+      RepeatCounter newWord = new RepeatCounter(sentence, word); //instantiate new object
+      Console.WriteLine(newWord); //check result
       return View("Index", newWord); //return result to index view
     }
   }
